@@ -8,19 +8,16 @@ import dust from '../src/assets/dust.jpg';
 import haze from '../src/assets/haze.jpg';
 import rain from '../src/assets/rain.jpg';
 import sunny from '../src/assets/sunny.jpg';
-import sunset from '../src/assets/sunset.jpg';
 
 function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 
   
-
   const searchLocation = async (event) => {
     if (event.key === 'Enter') {
       try{
-          const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=b75c098daf6c6742b23c0a8baf6aeda3`)
-          console.log(response);
+          const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${process.env.REACT_APP_API_KEY}`)
           setData(response.data)
       }
       catch(e){
@@ -35,11 +32,9 @@ toast.error('Please enter valid city.')
     navigator.geolocation.getCurrentPosition(async function(position) {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
-       const resp=await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=b75c098daf6c6742b23c0a8baf6aeda3&units=imperial`)
+       const resp=await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`)
        
        setData(resp.data)
-       console.log(resp.data)
-      console.log("Latitude: " + latitude + ", Longitude: " + longitude);
     });
     
   },[])
