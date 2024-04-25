@@ -1,1 +1,4 @@
-![Screenshot 2024-04-19 121602](https://github.com/aayan269/weather/assets/105919878/15b55c5f-4a26-41a7-a15b-84214cbddcd9)
+![weather](https://github.com/aayan269/weather/assets/105919878/d3a9066f-90f5-4bb8-8cfd-43f80c856717)
+
+              
+![weather mob](https://github.com/aayan269/weather/assets/105919878/bdbe3427-7460-423e-a8e4-732c4c9d37a1)
