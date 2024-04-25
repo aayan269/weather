@@ -8,7 +8,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.\![Screenshot 2024-04-19 121602](https://github.com/aayan269/weather/assets/105919878/b6276bc0-674e-4942-8155-2f89515744ff)
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
