@@ -21,7 +21,6 @@ function App() {
           setData(response.data)
       }
       catch(e){
-console.log(e);
 toast.error('Please enter valid city.')
       }
      
